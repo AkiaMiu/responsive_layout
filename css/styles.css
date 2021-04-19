@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  display: none;
+}
+html #layout_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#layout_wrapper #layout_header {
+  position: fixed;
+  display: block;
+  min-height: 15vh;
+  width: 100vw;
+  background: #0ff;
+}
+#layout_wrapper #layout_main section {
+  width: 100vw;
+  height: 100vh;
+}
+#layout_wrapper #layout_main section:nth-child(even) {
+  background: #611;
+}
+#layout_wrapper #layout_main section:nth-child(odd) {
+  background: #116;
+}
+#layout_wrapper #layout_footer {
+  width: 100vw;
+  min-height: 50vh;
+  background: #ff1;
+}
